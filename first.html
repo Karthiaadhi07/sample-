@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="one.css">
+    <title>Animation</title>
+    <style>
+        @keyframes slide-in-right {
+            from{transform: translateX(-400px);}
+            to{transform: translate(200px);}
+        }
+        div{
+            animation-name: slide-in-right ;    
+            animation-duration: 2s;
+            animation-timing-function: unset;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode:both;
+            transform: translate(200px);
+            /* animation:een enaa thala */
+
+        }
+        div{
+            width:250px;
+            height:250px;
+            background-color: rgb(58, 58, 135); 
+        }
+        @keyframes rotate{
+            from{transform: rotate(-120deg);}
+            to{transform: rotate(45deg);
+            transform: translateX(500px);}
+        }
+        .cricket{
+            /* transform:  translateX(400px); */
+            animation: rotate 2s linear 2s 1 normal forwards;
+        }
+        @keyframes bounce {
+            0%{transform: translateY(0px)}
+            20%{transform: translateY(200px)}
+            40%{transform: translateY(-45px)}
+            60%{transform: translateY(400px)}
+            80%{transform: translateY(-10px)}
+            100%{transform: translateY(0px)}
+        }
+        .bounce{
+            animation: bounce 2s ease-in 1s 4 normal forwards;
+            transform: translateX(-200px);
+        }
+    </style>
+</head>
+<body>
+    <div>CRICKET</div>
+    <div class="cricket"> FOREVER </div>
+    <div class="bounce">DEFINETLY NOT</div>
+</body>
+</html>
